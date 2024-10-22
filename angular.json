@@ -28,7 +28,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/font-awesome/scss/font-awesome.scss",
+              "node_modules/ngx-toastr"
+
+
             ],
             "scripts": []
           },
@@ -123,6 +128,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "EliteCare"
+    }
+  },
+  "defaultProject": "EliteCare",
+  "cli": {
+    "analytics": "fda1dd44-7964-45aa-b525-ab49c509aaf8"
+  }
 }
