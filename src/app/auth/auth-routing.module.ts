@@ -24,4 +24,5 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
+//hi
 export class AuthRoutingModule { }
