@@ -5,7 +5,7 @@ import { PatientsComponent } from './patients/patients.component';
 import { BookAppointmentComponent } from './patients/bookappointmentr/bookappointmentr.component';
 
 const routes: Routes = [//empty route
-  {path:'',redirectTo:'patients/list',pathMatch:'full'},
+  {path:'',redirectTo:'auth/home',pathMatch:'full'},
     //autherisation authentication
     {path:'auth',component:AuthComponent,
       loadChildren: () =>
