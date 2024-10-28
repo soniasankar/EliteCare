@@ -1,0 +1,120 @@
+/* General Container Styling */
+.container {
+    padding: 30px;
+    background-color: #F8F9FA; /* Light Gray as the background */
+    border-radius: 10px; /* More pronounced rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+}
+
+/* Header Styling */
+.header {
+    margin-bottom: 30px;
+    text-align: center; /* Center align header */
+}
+
+.header h2 {
+    color: #343A40; /* Dark Gray for contrast */
+    font-family: 'Arial', sans-serif; /* Use a clean font */
+    font-size: 1.8rem; /* Larger font size */
+}
+
+/* Search Input and Add Button Margins */
+.custom-margin-search,
+.custom-margin-add {
+    margin-bottom: 15px; /* Space for search input and add button */
+}
+
+/* Table Styling */
+.table {
+    background-color: #ffffff; /* White background for table */
+    border-radius: 8px; /* Rounded corners for table */
+    overflow: hidden; /* Prevents overflow for rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for table */
+}
+
+/* Table Header */
+.table th {
+    background: #008080; /* Teal background for header */
+    color: #ffffff; /* White text for header */
+    font-weight: bold; /* Bold font for header */
+    text-align: left; /* Left align text */
+    padding: 12px; /* Padding for header */
+}
+
+/* Table Body */
+.table td {
+    vertical-align: middle; /* Align items in the center */
+    padding: 12px; /* Padding for cells */
+    font-family: 'Arial', sans-serif; /* Consistent font */
+    color: #343A40; /* Dark Gray for text in cells */
+}
+
+/* Alternating Row Colors */
+.table tbody tr:nth-child(even) {
+    background-color: #F8F9FA; /* Light Gray for even rows */
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+}
+
+/* Active Row Highlight */
+.table tbody tr.active {
+    background-color: #e0f7fa; /* Light cyan for active row */
+}
+
+/* Table Row Hover Effect */
+.table tbody tr:hover {
+    background-color: #e6f2f2; /* Slightly lighter Teal on hover */
+}
+
+/* Button Styles */
+.btn {
+    background-color: #008080; /* Teal for buttons */
+    color: #ffffff; /* White text */
+    transition: background-color 0.3s, color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.btn:hover {
+    background-color: #006666; /* Darker Teal on hover */
+    color: white; /* White text on hover */
+    transform: scale(1.05); /* Slightly increase button size on hover */
+}
+
+/* Footer for Pagination */
+.footer {
+    margin-top: 30px; /* Space above pagination */
+}
+
+/* Pagination Controls */
+.pagination-controls {
+    display: flex;
+    justify-content: flex-end; /* Align pagination to the right */
+    margin-top: 10px; /* Space above pagination */
+}
+
+/* Pagination Styling */
+.pagination-controls .pagination {
+    margin: 0; /* Remove default margin */
+}
+
+.pagination-controls .pagination li {
+    margin: 0 5px; /* Space between pagination items */
+}
+
+.pagination-controls .pagination li a {
+    padding: 8px 12px; /* Padding for pagination links */
+    border-radius: 4px; /* Rounded corners for pagination links */
+    background-color: #008080; /* Primary Teal color */
+    color: #fff; /* White text */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.pagination-controls .pagination li a:hover {
+    background-color: #006666; /* Darker Teal on hover */
+}
+
+.pagination-controls .pagination li.active a {
+    background-color: #343A40; /* Dark Gray for active page */
+    color: #fff; /* White text */
+}

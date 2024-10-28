@@ -7,14 +7,14 @@ export class Patient {
     PatientId: number;
     FirstName: string;
     LastName: string;
-    Dob?: Date; // Nullable date of birth
+    Dob?: Date | null = null;
     Gender: string;
     BloodGroup: string;
     PhoneNumber: string;
     Address: string;
     Email: string;
-    IsActive?: boolean; // Nullable boolean for active status
-    RegisterDate?: Date; // Nullable registration date
+    IsActive?: boolean = false; // Nullable boolean for active status
+    RegisterDate?: Date | null = null; 
 
     Appointments: Appointment[]; // Assuming Appointment is another class
     MedicalRecords: MedicalRecord[]; // Assuming MedicalRecord is another class
@@ -35,4 +35,6 @@ export class Patient {
         this.Prescriptions = []; // Initialize as an empty array
         this.Tests = []; // Initialize as an empty array
     }
+
+ 
 }
