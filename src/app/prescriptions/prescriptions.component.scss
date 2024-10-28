@@ -1,0 +1,647 @@
+// // // // // Color Variables
+// // // // $primary-color: #008080; // Teal
+// // // // $secondary-color: #F8F9FA; // Light Gray
+// // // // $accent-color: #343A40; // Dark Gray
+
+// // // // // Global Styles
+// // // // body {
+// // // //     font-family: Arial, sans-serif;
+// // // //     background-color: $secondary-color;
+// // // //     color: $accent-color;
+// // // //     margin: 0;
+// // // //     padding: 0;
+// // // // }
+
+// // // // // Container Styles
+// // // // .container {
+// // // //     max-width: 1200px;
+// // // //     margin: 0 auto;
+// // // //     padding: 20px;
+// // // //     background-color: white;
+// // // //     border-radius: 8px;
+// // // //     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+// // // // }
+
+// // // // // Headings
+// // // // h1, h2, h3, h4, h5, h6 {
+// // // //     color: $primary-color;
+// // // //     margin-bottom: 15px;
+// // // // }
+
+// // // // // Buttons
+// // // // .btn {
+// // // //     background-color: $primary-color;
+// // // //     color: white;
+// // // //     border: none;
+// // // //     border-radius: 4px;
+// // // //     padding: 10px 20px;
+// // // //     cursor: pointer;
+// // // //     transition: background-color 0.3s;
+
+// // // //     &:hover {
+// // // //         background-color: darken($primary-color, 10%);
+// // // //     }
+
+// // // //     &.btn-secondary {
+// // // //         background-color: $secondary-color;
+// // // //         color: $accent-color;
+// // // //     }
+// // // // }
+
+// // // // // Form Styles
+// // // // .form-group {
+// // // //     margin-bottom: 1.5rem;
+
+// // // //     label {
+// // // //         font-weight: bold;
+// // // //         color: $accent-color;
+// // // //     }
+
+// // // //     input, select, textarea {
+// // // //         width: 100%;
+// // // //         padding: 10px;
+// // // //         border: 1px solid $accent-color;
+// // // //         border-radius: 4px;
+
+// // // //         &:focus {
+// // // //             border-color: $primary-color;
+// // // //             outline: none;
+// // // //         }
+// // // //     }
+// // // // }
+
+// // // // // Table Styles
+// // // // .table {
+// // // //     width: 100%;
+// // // //     border-collapse: collapse;
+    
+// // // //     th {
+// // // //         background-color: $secondary-color;
+// // // //         color: $accent-color;
+// // // //         padding: 10px;
+// // // //         text-align: left;
+// // // //     }
+    
+// // // //     td {
+// // // //         padding: 10px;
+// // // //         border-bottom: 1px solid $accent-color;
+// // // //     }
+// // // // }
+
+// // // // // Alerts
+// // // // .alert {
+// // // //     padding: 15px;
+// // // //     border-radius: 4px;
+
+// // // //     &.alert-danger {
+// // // //         background-color: rgba(255, 0, 0, 0.1);
+// // // //         color: #d9534f;
+// // // //     }
+
+// // // //     &.alert-success {
+// // // //         background-color: rgba(0, 255, 0, 0.1);
+// // // //         color: #5cb85c;
+// // // //     }
+// // // // }
+
+
+
+// // // $primary-color: #008080; // Teal
+// // // $secondary-color: #F8F9FA; // Light Gray
+// // // $accent-color: #343A40; // Dark Gray
+
+// // // body {
+// // //   background-color: $secondary-color;
+// // //   color: $accent-color;
+// // //   font-family: Arial, sans-serif;
+// // // }
+
+// // // h1, h2, h3, h4, h5, h6 {
+// // //   color: $primary-color;
+// // // }
+
+// // // .btn-primary {
+// // //   background-color: $primary-color;
+// // //   border-color: $primary-color;
+// // //   color: #fff;
+
+// // //   &:hover {
+// // //     background-color: darken($primary-color, 10%);
+// // //     border-color: darken($primary-color, 10%);
+// // //   }
+// // // }
+
+// // // .navbar {
+// // //   background-color: $primary-color;
+  
+// // //   .navbar-brand, .navbar-nav .nav-link {
+// // //     color: #fff;
+
+// // //     &:hover {
+// // //       color: lighten($primary-color, 20%);
+// // //     }
+// // //   }
+// // // }
+
+// // // .card {
+// // //   border: 1px solid $accent-color;
+// // //   background-color: #fff;
+
+// // //   .card-header {
+// // //     background-color: $primary-color;
+// // //     color: #fff;
+// // //   }
+// // // }
+
+// // // footer {
+// // //   background-color: $accent-color;
+// // //   color: #fff;
+// // //   padding: 1rem;
+// // //   text-align: center;
+// // // }
+
+// // // $table-bg: #e7f1f1; // Light background color for tables
+// // // $table-border: #008080; // Teal border color
+
+// // // .table {
+// // //     background-color: $table-bg;
+// // //     border: 1px solid $table-border;
+
+// // //     th {
+// // //         background-color: $primary-color;
+// // //         color: white;
+// // //     }
+
+// // //     td {
+// // //         border: 1px solid $table-border;
+// // //         color: $accent-color;
+// // //     }
+// // // }
+
+// // // .list-group-item {
+// // //     background-color: #f8f9fa; // Light gray for list items
+// // //     color: $accent-color;
+
+// // //     &:hover {
+// // //         background-color: $primary-color;
+// // //         color: white;
+// // //     }
+// // // }
+
+
+
+
+
+// // // Color Variables
+// // $primary-color: #008080; // Teal
+// // $secondary-color: #F8F9FA; // Light Gray
+// // $accent-color: #343A40; // Dark Gray
+// // $white: #ffffff;
+
+// // // Global Styles
+// // body {
+// //     font-family: Arial, sans-serif;
+// //     background-color: $secondary-color;
+// //     color: $accent-color;
+// //     margin: 0;
+// //     padding: 0;
+// // }
+
+// // // Container Styles
+// // .container {
+// //     max-width: 1200px;
+// //     margin: 0 auto;
+// //     padding: 20px;
+// //     background-color: $white;
+// //     border-radius: 8px;
+// //     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+// // }
+
+// // // Headings
+// // h2 {
+// //     color: $primary-color;
+// //     margin-bottom: 20px;
+// // }
+
+// // h4 {
+// //     color: $primary-color;
+// //     margin-bottom: 15px;
+// // }
+
+// // // Buttons
+// // .btn {
+// //     border-radius: 4px;
+// //     transition: background-color 0.3s;
+
+// //     &.btn-primary {
+// //         background-color: $primary-color;
+// //         border-color: $primary-color;
+// //         color: $white;
+
+// //         &:hover {
+// //             background-color: darken($primary-color, 10%);
+// //             border-color: darken($primary-color, 10%);
+// //         }
+// //     }
+
+// //     &.btn-secondary {
+// //         background-color: $secondary-color;
+// //         color: $accent-color;
+
+// //         &:hover {
+// //             background-color: lighten($secondary-color, 10%);
+// //         }
+// //     }
+// // }
+
+// // // Form Styles
+// // .form-group {
+// //     margin-bottom: 1.5rem;
+
+// //     label {
+// //         font-weight: bold;
+// //         color: $accent-color;
+// //     }
+
+// //     input, select, textarea {
+// //         width: 100%;
+// //         padding: 10px;
+// //         border: 1px solid $accent-color;
+// //         border-radius: 4px;
+        
+// //         &:focus {
+// //             border-color: $primary-color;
+// //             outline: none;
+// //         }
+// //     }
+// // }
+
+// // // Table Styles
+// // .table {
+// //     width: 100%;
+// //     border-collapse: collapse;
+    
+// //     th {
+// //         background-color: $secondary-color;
+// //         color: $accent-color;
+// //         padding: 10px;
+// //         text-align: left;
+// //     }
+    
+// //     td {
+// //         padding: 10px;
+// //         border-bottom: 1px solid $accent-color;
+// //     }
+// // }
+
+// // // Alerts
+// // .alert {
+// //     padding: 15px;
+// //     border-radius: 4px;
+
+// //     &.alert-danger {
+// //         background-color: rgba(255, 0, 0, 0.1);
+// //         color: #d9534f;
+// //     }
+
+// //     &.alert-success {
+// //         background-color: rgba(0, 255, 0, 0.1);
+// //         color: #5cb85c;
+// //     }
+// // }
+
+// // // List Group Styles
+// // .list-group-item {
+// //     display: flex;
+// //     justify-content: space-between;
+// //     align-items: center;
+
+// //     button {
+// //         margin-left: 10px;
+// //     }
+// // }
+
+// // // Responsive Styles
+// // @media (max-width: 768px) {
+// //     .container {
+// //         padding: 10px;
+// //     }
+
+// //     h2 {
+// //         font-size: 1.5rem;
+// //     }
+
+// //     h4 {
+// //         font-size: 1.25rem;
+// //     }
+// // }
+
+
+
+// // Color Variables
+// $primary-color: #008080; // Teal
+// $secondary-color: #F8F9FA; // Light Gray
+// $accent-color: #343A40; // Dark Gray
+// $white: #ffffff;
+
+// // Global Styles
+// body {
+//     font-family: Arial, sans-serif;
+//     background-color: $secondary-color;
+//     color: $accent-color;
+//     margin: 0;
+//     padding: 0;
+// }
+
+// // Container Styles
+// .container {
+//     max-width: 1200px;
+//     margin: 0 auto;
+//     padding: 20px;
+//     background-color: $white;
+//     border-radius: 8px;
+//     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+// }
+
+// // Headings
+// h2 {
+//     color: $primary-color;
+//     margin-bottom: 20px;
+// }
+
+// h4 {
+//     color: $primary-color;
+//     margin-bottom: 15px;
+// }
+
+// // Buttons
+// .btn {
+//     border-radius: 4px;
+//     transition: background-color 0.3s;
+
+//     &.btn-primary {
+//         background-color: $primary-color;
+//         border-color: $primary-color;
+//         color: $white;
+
+//         &:hover {
+//             background-color: darken($primary-color, 10%);
+//             border-color: darken($primary-color, 10%);
+//         }
+//     }
+
+//     &.btn-secondary {
+//         background-color: $secondary-color;
+//         color: $accent-color;
+
+//         &:hover {
+//             background-color: lighten($secondary-color, 10%);
+//         }
+//     }
+// }
+
+// // Form Styles
+// .form-group {
+//     margin-bottom: 1.5rem;
+
+//     label {
+//         font-weight: bold;
+//         color: $accent-color;
+//     }
+
+//     input, select, textarea {
+//         width: 100%;
+//         padding: 10px;
+//         border: 1px solid $accent-color;
+//         border-radius: 4px;
+
+//         &:focus {
+//             border-color: $primary-color;
+//             outline: none;
+//         }
+//     }
+// }
+
+// // Table Styles
+// .table {
+//     width: 100%;
+//     border-collapse: collapse;
+
+//     th {
+//         background-color: $secondary-color;
+//         color: $accent-color;
+//         padding: 10px;
+//         text-align: left;
+//     }
+
+//     td {
+//         padding: 10px;
+//         border-bottom: 1px solid $accent-color;
+//     }
+// }
+
+// // Alerts
+// .alert {
+//     padding: 15px;
+//     border-radius: 4px;
+
+//     &.alert-danger {
+//         background-color: rgba(255, 0, 0, 0.1);
+//         color: #d9534f;
+//     }
+
+//     &.alert-success {
+//         background-color: rgba(0, 255, 0, 0.1);
+//         color: #5cb85c;
+//     }
+// }
+
+// // List Group Styles
+// .list-group-item {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+
+//     button {
+//         margin-left: 10px;
+//     }
+// }
+
+// // Responsive Styles
+// @media (max-width: 768px) {
+//     .container {
+//         padding: 10px;
+//     }
+
+//     h2 {
+//         font-size: 1.5rem;
+//     }
+
+//     h4 {
+//         font-size: 1.25rem;
+//     }
+// }
+
+
+
+
+// Color Variables
+$primary-color: #008080; // Teal
+$secondary-color: #F8F9FA; // Light Gray
+$accent-color: #343A40; // Dark Gray
+$white: #ffffff;
+
+// Global Styles
+body {
+    font-family: Arial, sans-serif;
+    background-color: $secondary-color;
+    color: $accent-color;
+    margin: 0;
+    padding: 0;
+}
+
+// Container Styles
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+// Headings
+h2 {
+    color: $primary-color;
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: $primary-color;
+    margin-bottom: 15px;
+}
+
+// Buttons
+.btn {
+    border-radius: 4px;
+    transition: background-color 0.3s;
+
+    &.btn-primary {
+        background-color: $primary-color;
+        border-color: $primary-color;
+        color: $white;
+
+        &:hover {
+            background-color: darken($primary-color, 10%);
+            border-color: darken($primary-color, 10%);
+        }
+    }
+
+    &.btn-secondary {
+        background-color: $secondary-color;
+        color: $accent-color;
+
+        &:hover {
+            background-color: lighten($secondary-color, 10%);
+        }
+    }
+}
+
+// Form Styles
+.form-group {
+    margin-bottom: 1.5rem;
+
+    label {
+        font-weight: bold;
+        color: $accent-color;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid $accent-color;
+        border-radius: 4px;
+
+        &:focus {
+            border-color: $primary-color;
+            outline: none;
+        }
+    }
+}
+
+// Patient Details Styles
+.patient-details {
+    color: $primary-color; // Teal for patient details
+}
+
+// Medicine Table Header
+.medicine-header {
+    color: $primary-color; // Teal for medicine table header
+}
+
+// Medicine Name
+.medicine-name {
+    color: $primary-color; // Teal for medicine name
+}
+
+// Table Styles
+.table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th {
+        background-color: $primary-color;
+        color: $white;
+        padding: 10px;
+        text-align: left;
+    }
+
+    td {
+        padding: 10px;
+        border-bottom: 1px solid $accent-color;
+    }
+}
+
+
+
+// Alerts
+.alert {
+    padding: 15px;
+    border-radius: 4px;
+
+    &.alert-danger {
+        background-color: rgba(255, 0, 0, 0.1);
+        color: #d9534f;
+    }
+
+    &.alert-success {
+        background-color: rgba(0, 255, 0, 0.1);
+        color: #5cb85c;
+    }
+}
+
+// List Group Styles
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        margin-left: 10px;
+    }
+}
+
+// Responsive Styles
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+}

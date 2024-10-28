@@ -1,0 +1,67 @@
+body {
+    background-color: #F8F9FA; /* Light Gray */
+    color: #343A40; /* Dark Gray */
+}
+
+.custom-ng-nav-bar {
+    background-color: #008080; /* Teal */
+    color: #F8F9FA; /* Light Gray for text */
+}
+
+.navbar-brand img {
+    width: 100px; /* Ensure the logo fits well */
+}
+
+.navbar-title {
+    color: #F8F9FA; /* Light Gray for title */
+    font-size: 1.5em; /* Consistent font size */
+}
+
+.nav-link {
+    color: #F8F9FA; /* Light Gray */
+    font-size: 1.5em; /* Font size for links */
+}
+
+.nav-link:hover {
+    color: #343A40; /* Dark Gray on hover */
+}
+
+.jumbotron {
+    background-color: #008080; /* Teal */
+    color: #F8F9FA; /* Light Gray */
+}
+
+.card {
+    border: 1px solid #343A40; /* Dark Gray */
+}
+
+.card-title {
+    color: #008080; /* Teal */
+}
+
+.btn-primary {
+    background-color: #008080; /* Teal */
+    border-color: #008080; /* Teal */
+}
+
+.btn-primary:hover {
+    background-color: #005757; /* Darker Teal */
+    border-color: #005757; /* Darker Teal */
+}
+
+h2 {
+    color: #008080; /* Teal */
+}
+
+.welcome-message {
+    color: #F8F9FA; /* Light Gray */
+    font-size: 1.2em; /* Font size for welcome message */
+    display: block; /* Make it a block element */
+    margin-bottom: 5px; /* Space between welcome message and logout icon */
+}
+
+.navbar-nav {
+    display: flex; /* Ensure the nav items are in a row */
+    flex-direction: column; /* Stack logout icon below welcome message */
+    align-items: flex-end; /* Align items to the right */
+}

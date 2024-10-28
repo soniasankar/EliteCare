@@ -1,0 +1,209 @@
+// // $primary-color: #008080; // Teal
+// // $secondary-color: #F8F9FA; // Light Gray
+// // $accent-color: #343A40; // Dark Gray
+
+// // body {
+// //     background-color: $secondary-color; // Light Gray background
+// //     display: flex; // Use flexbox for centering
+// //     justify-content: center; // Center horizontally
+// //     align-items: center; // Center vertically
+// //     height: 100vh; // Full height for vertical centering
+// //     margin: 0; // Remove default margin
+// // }
+
+// // .container {
+// //     background-color: white; // White container background for contrast
+// //     border-radius: 8px; // Rounded corners
+// //     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); // Deeper shadow for more prominence
+// //     padding: 40px; // Increased padding for a more spacious feel
+// //     width: 100%; // Full width for responsiveness
+// //     max-width: 400px; // Maximum width to keep it compact
+// // }
+
+// // h4 {
+// //     color: $primary-color; // Teal color for the heading
+// //     margin-bottom: 20px; // Spacing below the heading
+// //     text-align: center; // Center the heading text
+// // }
+
+// // .form-control {
+// //     border: 1px solid $accent-color; // Dark Gray border
+// //     border-radius: 4px; // Slightly rounded corners
+// //     &:focus {
+// //         border-color: $primary-color; // Teal border on focus
+// //         box-shadow: 0 0 5px rgba($primary-color, 0.5); // Teal shadow on focus
+// //     }
+// // }
+
+// // .validation-error {
+// //     font-size: 0.9em; // Smaller font size for error messages
+// //     margin-top: 5px; // Spacing above error messages
+// // }
+
+// // .text-danger {
+// //     color: $accent-color; // Dark Gray for error messages
+// // }
+
+// // .btn-primary {
+// //     background-color: $primary-color; // Teal background
+// //     border-color: $primary-color; // Teal border
+// //     &:hover {
+// //         background-color: darken($primary-color, 10%); // Darken on hover
+// //         border-color: darken($primary-color, 10%); // Darken border on hover
+// //     }
+// // }
+
+// // .btn-secondary {
+// //     background-color: $accent-color; // Dark Gray background for secondary buttons
+// //     border-color: $accent-color; // Dark Gray border for secondary buttons
+// //     &:hover {
+// //         background-color: lighten($accent-color, 10%); // Lighten on hover
+// //         border-color: lighten($accent-color, 10%); // Lighten border on hover
+// //     }
+// // } 
+
+
+
+
+
+// $primary-color: #008080; // Teal
+// $secondary-color: #F8F9FA; // Light Gray
+// $accent-color: #343A40; // Dark Gray
+
+// // body {
+// //     background: url('assets/EliteCare.png') no-repeat center center fixed; // Change the path to your image
+// //     background-size: cover; // Cover the whole background
+// //     display: flex; // Use flexbox for centering
+// //     justify-content: center; // Center horizontally
+// //     align-items: center; // Center vertically
+// //     height: 100vh; // Full height for vertical centering
+// //     margin: 0; // Remove default margin
+// // }
+// body {
+//     background: url('/assets/EliteCare.png') no-repeat center center fixed;
+//     background-size:auto;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     margin: 0;
+// }
+
+
+// .container {
+//     background-color: white; // White container background for contrast
+//     border-radius: 8px; // Rounded corners
+//     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); // Deeper shadow for more prominence
+//     padding: 40px; // Increased padding for a more spacious feel
+//     width: 100%; // Full width for responsiveness
+//     max-width: 400px; // Maximum width to keep it compact
+// }
+
+// h4 {
+//     color: $primary-color; // Teal color for the heading
+//     margin-bottom: 20px; // Spacing below the heading
+//     text-align: center; // Center the heading text
+// }
+
+// .form-control {
+//     border: 1px solid $accent-color; // Dark Gray border
+//     border-radius: 4px; // Slightly rounded corners
+//     &:focus {
+//         border-color: $primary-color; // Teal border on focus
+//         box-shadow: 0 0 5px rgba($primary-color, 0.5); // Teal shadow on focus
+//     }
+// }
+
+// .validation-error {
+//     font-size: 0.9em; // Smaller font size for error messages
+//     margin-top: 5px; // Spacing above error messages
+// }
+
+// .text-danger {
+//     color: $accent-color; // Dark Gray for error messages
+// }
+
+// .btn-primary {
+//     background-color: $primary-color; // Teal background
+//     border-color: $primary-color; // Teal border
+//     &:hover {
+//         background-color: darken($primary-color, 10%); // Darken on hover
+//         border-color: darken($primary-color, 10%); // Darken border on hover
+//     }
+// }
+
+// .btn-secondary {
+//     background-color: $accent-color; // Dark Gray background for secondary buttons
+//     border-color: $accent-color; // Dark Gray border for secondary buttons
+//     &:hover {
+//         background-color: lighten($accent-color, 10%); // Lighten on hover
+//         border-color: lighten($accent-color, 10%); // Lighten border on hover
+//     }
+// }
+
+
+
+
+$primary-color: #008080; // Teal
+$secondary-color: #F8F9FA; // Light Gray
+$accent-color: #343A40; // Dark Gray
+$background-color: #e4e5e5; // Soft Light Teal
+body {
+    background-color: $background-color; // Set background to Light Gray
+    display: flex; // Use flexbox for centering
+    justify-content: center; // Center horizontally
+    align-items: center; // Center vertically
+    height: 100vh; // Full height for vertical centering
+    margin: 0; // Remove default margin
+}
+
+.container {
+    background-color: $background-color; // White container background for contrast
+    border-radius: 8px; // Rounded corners
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); // Deeper shadow for more prominence
+    padding: 40px; // Increased padding for a more spacious feel
+    width: 100%; // Full width for responsiveness
+    max-width: 400px; // Maximum width to keep it compact
+}
+
+h4 {
+    color: $primary-color; // Teal color for the heading
+    margin-bottom: 20px; // Spacing below the heading
+    text-align: center; // Center the heading text
+}
+
+.form-control {
+    border: 1px solid $accent-color; // Dark Gray border
+    border-radius: 4px; // Slightly rounded corners
+    &:focus {
+        border-color: $primary-color; // Teal border on focus
+        box-shadow: 0 0 5px rgba($primary-color, 0.5); // Teal shadow on focus
+    }
+}
+
+.validation-error {
+    font-size: 0.9em; // Smaller font size for error messages
+    margin-top: 5px; // Spacing above error messages
+}
+
+.text-danger {
+    color: $accent-color; // Dark Gray for error messages
+}
+
+.btn-primary {
+    background-color: $primary-color; // Teal background
+    border-color: $primary-color; // Teal border
+    &:hover {
+        background-color: darken($primary-color, 10%); // Darken on hover
+        border-color: darken($primary-color, 10%); // Darken border on hover
+    }
+}
+
+.btn-secondary {
+    background-color: $accent-color; // Dark Gray background for secondary buttons
+    border-color: $accent-color; // Dark Gray border for secondary buttons
+    &:hover {
+        background-color: lighten($accent-color, 10%); // Lighten on hover
+        border-color: lighten($accent-color, 10%); // Lighten border on hover
+    }
+}

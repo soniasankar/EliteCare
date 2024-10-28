@@ -1,0 +1,41 @@
+body {
+    background-color: #F8F9FA;
+}
+
+.navbar {
+    background-color: #008080;
+}
+
+.jumbotron {
+    background-color: #008080;
+    color: white;
+}
+
+.section-header {
+    color: #008080;
+    margin-bottom: 20px;
+}
+
+.card {
+    border: 1px solid #343A40;
+}
+
+.footer {
+    background-color: #343A40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.carousel-item {
+    padding: 20px;
+    text-align: center;
+}
+
+.list-group-item {
+    transition: background-color 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #e2e6ea;
+}

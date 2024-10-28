@@ -1,26 +1,29 @@
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthComponent } from './auth/auth.component';
-
-const routes: Routes = [//empty route
-  {path:'',redirectTo:'auth/login',pathMatch:'full'},
-    //autherisation authentication
-    {path:'auth',component:AuthComponent,
-      loadChildren: () =>
-        import('./auth/auth.module')
-          .then(x=>x.AuthModule)
+import { PrescriptionsComponent } from 'src/app/prescriptions/prescriptions.component';
+import { HistoryComponent } from 'src/app/history/history.component';
+const routes: Routes = [
+  // Empty route
+  { path: '', redirectTo: 'auth/home', pathMatch: 'full' },
   
-    },
-     //wild card route 
-  {path:'**',redirectTo:'auth/pagenotfound',pathMatch:'full'}
-  //pathmatch :http://localhost:4200/auth/pagenotfound
-  //patchmatch defines how the router matches the url to the path"""
+  // Authorization and authentication
+  {
+    path: 'auth',
+    component: AuthComponent,
+    loadChildren: () =>
+      import('./auth/auth.module').then(x => x.AuthModule),
+  },
+  { path: 'prescriptions/:patientId', component: PrescriptionsComponent }, 
+  { path: 'history/:patientId', component: HistoryComponent }, 
+  // Wildcard route for 404
+  { path: '**', redirectTo: 'auth/pagenotfound', pathMatch: 'full' }
 ];
-
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
+

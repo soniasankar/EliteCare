@@ -1,1 +1,201 @@
-<p>login works!</p>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .back-button {
+            position: absolute; /* Positioning it absolutely */
+            top: 20px; /* Distance from the top */
+            right: 20px; /* Distance from the right */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container position-relative" style="padding-top: 50px;">
+   
+    <div class="back-button">
+        <a href="auth/home" class="btn btn-secondary">
+            <i class="fas fa-home"></i> 
+        </a>
+    </div>
+
+    <h4 class="text-center mb-4">Enter Your Credentials</h4>
+
+    <form [formGroup]="loginForm" (ngSubmit)="loginCredentials()">
+
+  
+        <div class="form-group">
+            <input type="text" placeholder="Enter User Name" formControlName="Username" class="form-control">
+            <div class="validation-error" *ngIf="isSubmitted && formControls.username?.errors">
+                <div *ngIf="formControls.username.errors.required" class="text-danger">
+                    User Name is invalid or required
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="form-group">
+            <input type="password" placeholder="Enter Password" formControlName="PasswordHash" class="form-control">
+            <div class="validation-error" *ngIf="isSubmitted && formControls.password?.errors">
+                <div *ngIf="formControls.password.errors.required" class="text-danger">
+                    Password is invalid or required
+                </div>
+            </div>
+        </div>
+
+      
+        <div>
+            <button type="submit" class="btn btn-lg btn-primary btn-block">LOGIN</button>
+        </div>
+
+        
+        <div class="validation-error mt-3" *ngIf="error">
+            <div class="text-danger">
+                {{ error }}
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html> 
+
+ -->
+
+
+<!-- 
+<app-navbar></app-navbar>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ 
+</head>
+<body>
+
+<div class="container position-relative" style="padding-top: 50px;">
+   
+    <div class="back-button">
+        <a href="auth/home" class="btn btn-secondary">
+            <i class="fas fa-home"></i> 
+        </a>
+    </div>
+
+    <h4 class="text-center mb-4">Enter Your Credentials</h4>
+
+    <form [formGroup]="loginForm" (ngSubmit)="loginCredentials()">
+        <div class="form-group">
+            <input type="text" placeholder="Enter User Name" formControlName="Username" class="form-control">
+            <div class="validation-error" *ngIf="isSubmitted && formControls.username?.errors">
+                <div *ngIf="formControls.username.errors.required" class="text-danger">
+                    User Name is invalid or required
+                </div>
+            </div>
+        </div>
+       
+        <div class="form-group">
+            <input type="password" placeholder="Enter Password" formControlName="PasswordHash" class="form-control">
+            <div class="validation-error" *ngIf="isSubmitted && formControls.password?.errors">
+                <div *ngIf="formControls.password.errors.required" class="text-danger">
+                    Password is invalid or required
+                </div>
+            </div>
+        </div>
+      
+        <div>
+            <button type="submit" class="btn btn-lg btn-primary btn-block">LOGIN</button>
+        </div>
+
+        <div class="validation-error mt-3" *ngIf="error">
+            <div class="text-danger">
+                {{ error }}
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+<app-navbar></app-navbar>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+</head>
+<body>
+
+
+<div class="container position-relative" style="padding-top: 50px;">
+    <!-- Bold and Italicized Title 
+    <h1 class="text-center mb-4 font-weight-bold" style="font-style: italic;">Elite Care</h1>-->
+
+    <div class="back-button">
+        <a href="auth/home" class="btn btn-secondary">
+            <i class="fas fa-home"></i> 
+        </a>
+    </div>
+
+    <h4 class="text-center mb-4">Enter Your Credentials</h4>
+
+    <form [formGroup]="loginForm" (ngSubmit)="loginCredentials()">
+        <div class="form-group">
+            <input type="text" placeholder="Enter User Name" formControlName="Username" class="form-control">
+            <div class="validation-error" *ngIf="isSubmitted && formControls.username?.errors">
+                <div *ngIf="formControls.username.errors.required" class="text-danger">
+                    User Name is invalid or required
+                </div>
+            </div>
+        </div>
+       
+        <div class="form-group">
+            <input type="password" placeholder="Enter Password" formControlName="PasswordHash" class="form-control">
+            <div class="validation-error" *ngIf="isSubmitted && formControls.password?.errors">
+                <div *ngIf="formControls.password.errors.required" class="text-danger">
+                    Password is invalid or required
+                </div>
+            </div>
+        </div>
+      
+        <div>
+            <button type="submit" class="btn btn-lg btn-primary btn-block">LOGIN</button>
+        </div>
+
+        <div class="validation-error mt-3" *ngIf="error">
+            <div class="text-danger">
+                {{ error }}
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

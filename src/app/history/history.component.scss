@@ -1,0 +1,132 @@
+// Define your color variables
+$primary-color: #008080;  // Teal
+$secondary-color: #F8F9FA; // Light Gray
+$accent-color: #343A40;     // Dark Gray
+
+// General Styles
+body {
+    background-color: $secondary-color;
+    color: $accent-color;
+    font-family: Arial, sans-serif;
+}
+
+// Container
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+// Headings
+h2, h4 {
+    color: $primary-color;
+}
+
+// Form Styles
+.form-group {
+    margin-bottom: 1.5rem;
+
+    label {
+        color: $primary-color;
+    }
+
+    input, select, textarea {
+        border: 1px solid $accent-color;
+        border-radius: 4px;
+        &:focus {
+            border-color: $primary-color;
+            box-shadow: 0 0 5px rgba($primary-color, 0.5);
+        }
+    }
+}
+
+// Button Styles
+.btn {
+    &.btn-primary {
+        background-color: $primary-color;
+        border-color: $primary-color;
+
+        &:hover {
+            background-color: darken($primary-color, 10%);
+            border-color: darken($primary-color, 10%);
+        }
+    }
+
+    &.btn-secondary {
+        background-color: $accent-color;
+        border-color: $accent-color;
+
+        &:hover {
+            background-color: lighten($accent-color, 10%);
+            border-color: lighten($accent-color, 10%);
+        }
+    }
+
+    &.btn-danger {
+        background-color: red;
+        border-color: red;
+
+        &:hover {
+            background-color: darken(red, 10%);
+            border-color: darken(red, 10%);
+        }
+    }
+}
+
+// Table Styles
+.table {
+    thead {
+        background-color: $primary-color;
+        color: white;
+    }
+
+    th, td {
+        vertical-align: middle;
+        border: 1px solid $accent-color;
+    }
+
+    .btn-danger {
+        width: 100%;
+    }
+}
+
+// Alert Styles
+.alert {
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+/* Pagination Styles */
+.pagination {
+    margin: 20px 0; /* Space above and below pagination */
+}
+
+.pagination .page-item {
+    margin: 0 5px; /* Space between pagination items */
+}
+
+.pagination .page-link {
+    color: #008080; /* Teal for pagination links */
+    border: 1px solid #008080; /* Teal border for links */
+    padding: 8px 12px; /* Padding for better click area */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.pagination .page-link:hover {
+    background-color: #e2e6ea; /* Light gray background on hover */
+    color: #005757; /* Darker teal for text on hover */
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #008080; /* Teal background for active page */
+    color: #F8F9FA; /* Light gray text for active page */
+    border-color: #008080; /* Teal border for active page */
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #6c757d; /* Gray color for disabled links */
+    background-color: transparent; /* No background for disabled */
+    border-color: #dee2e6; /* Light gray border for disabled */
+    pointer-events: none; /* Prevent interaction */
+}

@@ -1,0 +1,114 @@
+body {
+    background-color: #F8F9FA; /* Light Gray */
+    color: #343A40; /* Dark Gray */
+}
+
+.container {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff; /* White background for container */
+    padding: 20px; /* Added padding for better spacing */
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9; /* Light gray for odd rows */
+}
+
+.table-striped tbody tr:hover {
+    background-color: #e2e6ea; /* Light gray on hover */
+}
+
+.btn {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary {
+    background-color: #008080; /* Teal */
+    border-color: #008080; /* Teal */
+}
+
+.btn-primary:hover {
+    background-color: #005757; /* Darker Teal */
+    border-color: #005757; /* Darker Teal */
+}
+
+.btn-secondary {
+    color: #008080; /* Teal text */
+    border-color: #008080; /* Teal border */
+}
+
+.btn-secondary:hover {
+    background-color: #e2e6ea; /* Light gray on hover */
+    color: #343A40; /* Dark Gray text on hover */
+}
+
+h2 {
+    color: #008080; /* Teal */
+    font-weight: bold; /* Make heading bold */
+}
+
+.navbar {
+    background-color: #008080; /* Teal */
+}
+
+.nav-link {
+    color: #F8F9FA; /* Light Gray */
+}
+
+.nav-link:hover {
+    color: #343A40; /* Dark Gray */
+}
+
+.jumbotron {
+    background-color: #008080; /* Teal */
+    color: #F8F9FA; /* Light Gray */
+}
+
+.card {
+    border: 1px solid #343A40; /* Dark Gray */
+}
+
+.card-title {
+    color: #008080; /* Teal */
+}
+
+.text-primary {
+    color: #008080 !important; /* Teal color */
+}
+/* Pagination Styles */
+.pagination {
+    margin: 20px 0; /* Space above and below pagination */
+}
+
+.pagination .page-item {
+    margin: 0 5px; /* Space between pagination items */
+}
+
+.pagination .page-link {
+    color: #008080; /* Teal for pagination links */
+    border: 1px solid #008080; /* Teal border for links */
+    padding: 8px 12px; /* Padding for better click area */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.pagination .page-link:hover {
+    background-color: #e2e6ea; /* Light gray background on hover */
+    color: #005757; /* Darker teal for text on hover */
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #008080; /* Teal background for active page */
+    color: #F8F9FA; /* Light gray text for active page */
+    border-color: #008080; /* Teal border for active page */
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #6c757d; /* Gray color for disabled links */
+    background-color: transparent; /* No background for disabled */
+    border-color: #dee2e6; /* Light gray border for disabled */
+    pointer-events: none; /* Prevent interaction */
+}

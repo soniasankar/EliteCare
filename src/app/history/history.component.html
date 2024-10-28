@@ -1,0 +1,106 @@
+<!-- 
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <div class="container">
+    <h2>Patient History</h2>
+  
+    <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+  
+    <button class="btn btn-secondary mb-3" (click)="goBack()">
+      <i class="fas fa-arrow-left "></i> Back
+  </button>
+  
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Diagnosis</th>
+          <th>Treatment</th>
+          <th>Doctor Name</th>
+          <th>Doctors Note</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let record of medicalRecords">
+
+          <td>{{ record.Diagnosis }}</td>
+          <td>{{ record.Treatment }}</td>
+          <td>{{ record.DoctorName }}</td>
+          <td>{{ record.DoctorsNote }}</td>
+          <td>{{ record.Date | date }}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <div *ngIf="!medicalRecords.length">
+      <p>No history found for this patient.</p>
+    </div>
+  </div>
+  
+  
+  <nav *ngIf="totalPages > 1">
+    <ul class="pagination justify-content-center">
+      <li class="page-item" [class.disabled]="currentPage === 1">
+        <a class="page-link" (click)="changePage(currentPage - 1)" tabindex="-1">Previous</a>
+      </li>
+      <li *ngFor="let page of pageNumbers" class="page-item" [class.active]="currentPage === page">
+        <a class="page-link" (click)="changePage(page)">{{ page }}</a>
+      </li>
+      <li class="page-item" [class.disabled]="currentPage === totalPages">
+        <a class="page-link" (click)="changePage(currentPage + 1)">Next</a>
+      </li>
+    </ul>
+  </nav> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<div class="container">
+  <h2>Patient History</h2>
+
+  <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+
+  <!-- Back Button -->
+  <button class="btn btn-secondary mb-3" (click)="goBack()">
+    <i class="fas fa-arrow-left"></i> Back
+  </button>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Diagnosis</th>
+        <th>Treatment</th>
+        <th>Doctor Name</th>
+        <th>Doctor's Note</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let record of paginatedRecords">
+        <td>{{ record.Diagnosis }}</td>
+        <td>{{ record.Treatment }}</td>
+        <td>{{ record.DoctorName }}</td>
+        <td>{{ record.DoctorsNote }}</td>
+        <td>{{ record.Date | date }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="!medicalRecords.length">
+    <p>No history found for this patient.</p>
+  </div>
+
+  <!-- Pagination Controls -->
+  <nav *ngIf="totalPages > 1">
+    <ul class="pagination justify-content-center">
+      <li class="page-item" [class.disabled]="currentPage === 1">
+        <a class="page-link" (click)="changePage(currentPage - 1)" tabindex="-1">Previous</a>
+      </li>
+      <li *ngFor="let page of [].constructor(totalPages); let i = index" class="page-item" [class.active]="currentPage === i + 1">
+        <a class="page-link" (click)="changePage(i + 1)">{{ i + 1 }}</a>
+      </li>
+      <li class="page-item" [class.disabled]="currentPage === totalPages">
+        <a class="page-link" (click)="changePage(currentPage + 1)">Next</a>
+      </li>
+    </ul>
+  </nav>
+</div>
