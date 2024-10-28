@@ -1,0 +1,69 @@
+<div *ngIf="isLoading" class="loading-spinner">
+    Loading...
+</div>
+
+<div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+</div>
+
+<div *ngIf="lastAppointmentDetails && !isLoading" id="receipt" class="receipt">
+    <div class="header">
+        <h1>EliteCare Hospital</h1>
+    </div>
+
+    <h2>Patient Details</h2>
+    <p><strong>Name:</strong> {{ lastAppointmentDetails.firstName }} {{ lastAppointmentDetails.lastName }}</p>
+    <p><strong>Patient ID:</strong> {{ lastAppointmentDetails.patientId }}</p>
+
+    <h2>Doctor Details</h2>
+    <p><strong>Doctor:</strong> {{ lastAppointmentDetails.doctorName }}</p>
+    <p><strong>Specialization:</strong> {{ lastAppointmentDetails.specializationName }}</p>
+
+    <h2>Appointment Details</h2>
+    <p><strong>Appointment ID:</strong> {{ lastAppointmentDetails.appointmentId }}</p>
+    <p><strong>Appointment Date:</strong> {{ lastAppointmentDetails.appointmentDate | date:'mediumDate' }}</p>
+    <p><strong>Time Slot:</strong> {{ lastAppointmentDetails.timeSlot }}</p>
+    <p><strong>Token Number:</strong> {{ lastAppointmentDetails.tokenNumber }}</p>
+
+    <h2>Fees</h2>
+    <p><strong>Registration Fee:</strong> {{ lastAppointmentDetails.registrationFee | currency }}</p>
+    <p><strong>Consultation Fee:</strong> {{ lastAppointmentDetails.consultationFee | currency }}</p>
+    <p><strong>Total Amount:</strong> {{ lastAppointmentDetails.totalAmount | currency }}</p>
+
+    <div class="button-container">
+        <button type="button" class="btn btn-secondary" (click)="goBack()">Back to Patient List</button>
+        <button type="button" class="btn btn-primary" (click)="printReceipt()">Print Receipt</button>
+    </div>
+</div>
+
+<style>
+    .header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .header h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+    .header .certification {
+        font-size: 14px;
+        margin: 0;
+    }
+    h2 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    p {
+        margin: 5px 0;
+    }
+    .button-container {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .btn {
+        padding: 10px 20px;
+        margin: 0 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+</style>

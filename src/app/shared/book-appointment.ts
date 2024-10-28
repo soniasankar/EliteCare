@@ -1,7 +1,7 @@
-export class Appointment {
+export class BookAppointment {
     patientId: number = 0;
     doctorId: number = 0;
     appointmentDate: Date | null = null; // Nullable DateTime
-    timeSlotId: number = 0
-   
+    timeSlotId: number = null; // Change to string
+  
 }

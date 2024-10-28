@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "EliteCare": {
+    "demoems-ng-june2": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/EliteCare",
+            "outputPath": "dist/demoems-ng-june2",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -30,9 +30,8 @@
             "styles": [
               "src/styles.scss",
               "node_modules/bootstrap/scss/bootstrap.scss",
-              "node_modules/font-awesome/scss/font-awesome.scss",
-              "node_modules/ngx-toastr"
-
+              "node_modules/ngx-toastr/toastr.css",
+              "node_modules/font-awesome/scss/font-awesome.scss"
 
             ],
             "scripts": []
@@ -71,18 +70,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "EliteCare:build"
+            "browserTarget": "demoems-ng-june2:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "EliteCare:build:production"
+              "browserTarget": "demoems-ng-june2:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "EliteCare:build"
+            "browserTarget": "demoems-ng-june2:build"
           }
         },
         "test": {
@@ -111,7 +110,7 @@
               "e2e/tsconfig.json"
             ],
             "exclude": [
-              "**/node_modules/**"
+              "*/node_modules/*"
             ]
           }
         },
@@ -119,19 +118,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "EliteCare:serve"
+            "devServerTarget": "demoems-ng-june2:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "EliteCare:serve:production"
+              "devServerTarget": "demoems-ng-june2:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "EliteCare",
+  "defaultProject": "demoems-ng-june2",
   "cli": {
-    "analytics": "fda1dd44-7964-45aa-b525-ab49c509aaf8"
+    "analytics": "38a214ec-fafd-4046-9b88-a880af15738f"
   }
 }

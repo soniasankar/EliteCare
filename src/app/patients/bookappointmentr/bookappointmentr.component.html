@@ -1,0 +1,76 @@
+<div class="appointment-container">
+  <h2>BOOK APPOINTMENT
+</h2>
+
+  <form (ngSubmit)="scheduleAppointment()" #appointmentForm="ngForm">
+
+    <!-- Specialization Section -->
+    <div class="form-group">
+      <label for="specialization"><strong>Specialization:</strong></label>
+      <select id="specialization" class="form-control" [(ngModel)]="selectedSpecializationId" (change)="onSpecializationChange($event.target.value)" name="specialization" required>
+        <option value="" disabled selected>Select Specialization</option>
+        <option *ngFor="let specialization of specializations" [value]="specialization.specializationId">
+          {{ specialization.specializationName }} <!-- Displaying specialization name -->
+        </option>
+      </select>
+    </div>
+   
+    <!-- Doctor Selection Section -->
+    <div class="form-group">
+      <label for="doctor"><strong>Select Doctor:</strong></label>
+      <select id="doctor" class="form-control" name="doctor" [(ngModel)]="selectedDoctorId" 
+              [disabled]="doctors.length === 0" required>
+        <option value="" disabled>Select a doctor</option>
+        <option *ngFor="let doctor of doctors" [value]="doctor.doctorId">
+          {{ doctor.doctorName }} 
+        </option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="appointmentDate"><strong>Appointment Date:</strong></label>
+      <input type="date" id="appointmentDate" 
+             [(ngModel)]="appointmentDate" 
+             (change)="onAppointmentDateChange()" 
+             name="appointmentDate" required aria-label="Appointment Date"/>
+  </div>
+
+   <!-- Time Slot Section -->
+   <div class="form-group">
+    <label for="timeSlot"><strong>Time Slot:</strong></label>
+    <select id="timeSlot" class="form-control" [(ngModel)]="selectedTimeSlot" required>
+      <option value="" disabled>Select Time Slot</option>
+      <option *ngFor="let timeSlot of filteredTimeSlots" [value]="timeSlot">
+        {{ timeSlot }}
+      </option>
+      
+    </select>
+  </div>
+
+  
+
+    <!-- Schedule Button -->
+    <button type="submit" class="btn btn-primary" [disabled]="!appointmentForm.form.valid">Book Appointment</button>
+
+
+    
+ <!-- Back Button -->
+<button class="btn btn-secondary" [routerLink]="['/patients/list']">GoBack</button>
+
+  </form>
+
+  <!-- Success Message -->
+  <div *ngIf="appointmentScheduled" class="alert alert-success mt-3">
+    Appointment scheduled successfully!
+    <button (click)="printBill()" class="btn btn-outline-primary mt-2">Print Bill</button>
+
+  </div>
+
+  <!-- Error Message -->
+  <div *ngIf="errorMessage" class="alert alert-danger mt-3">
+    {{ errorMessage }}
+    <div>
+  </div>
+  
+
+  </div>
+</div>
